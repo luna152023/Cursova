@@ -6,6 +6,8 @@ const CourseList: React.FC = () => {
     <ul>
       {courses.map(course => (
         <li key={course.id}>
+          <img src={course.image} alt={course.name} width="150" />
+          <br />
           <a href={course.url} target="_blank" rel="noopener noreferrer">
             {course.name}
           </a>
